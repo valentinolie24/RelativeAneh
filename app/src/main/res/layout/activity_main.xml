@@ -38,13 +38,42 @@
         android:layout_centerHorizontal="true"/>
 
     <TextView
-        android:id="@+id/tv_copyright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Copyright\nby Valentino Lie"
         android:gravity="center"
         android:layout_centerInParent="true"/>
 
+    <CheckBox
+        android:id="@+id/cb_ya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ya"
+        android:layout_alignParentBottom="true"/>
+
+    <CheckBox
+        android:id="@+id/cb_tidak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/cb_ya"/>
+
+    <TextView
+        android:id="@+id/tv_saya_nyatakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saya menyatakan data ini : "
+        android:layout_above="@+id/cb_ya"
+        android:layout_marginBottom="2dp"/>
+
+    <Spinner
+        android:id="@+id/sp_kemungkinan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/arr_kemungkinan"
+        android:layout_above="@id/cb_ya"
+        android:layout_toRightOf="@id/tv_saya_nyatakan"/>
 
 
 </RelativeLayout>
